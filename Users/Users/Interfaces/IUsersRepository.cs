@@ -6,5 +6,6 @@ namespace Users.Interfaces
     public interface IUsersRepository
     {
         User GetUserByUserId(int userId);
+        bool ExisteUserId(int userId);
     }
 }

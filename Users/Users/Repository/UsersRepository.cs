@@ -14,6 +14,19 @@ namespace Users.Repository
             this.usersDbContext = usersDbContext;
         }
 
+        public bool ExisteUserId(int userId)
+        {
+            var user = usersDbContext.Users.Where(r => r.UserId.Equals(userId)).FirstOrDefault();
+            if (user.UserId == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         public User GetUserByUserId(int userId)
         {
             var user = usersDbContext.Users

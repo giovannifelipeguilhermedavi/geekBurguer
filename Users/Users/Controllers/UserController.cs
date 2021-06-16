@@ -21,13 +21,21 @@ namespace Users.Controllers
             this.mapper = mapper;
         }
 
-        [HttpPost("User")]        
-        public IActionResult User([FromBody] string face)
+        [HttpGet("User/{userId:int}")]        
+        public new ActionResult<UserGet> User(int userId)
         {
             try
             {
-                var user = this.mapper.Map<UserGet>(usersRepository.GetUserByUserId(1111));
-                return this.Ok(user);
+                var existe = usersRepository.ExisteUserId(userId);
+                if (existe)
+                {
+                    var user = this.mapper.Map<UserGet>(usersRepository.GetUserByUserId(userId));
+                    return this.Ok(user);
+                }
+                else
+                {
+                    return this.NotFound();
+                }                
             }
             catch
             {
