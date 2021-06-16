@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Users.Model
+namespace Users.Contract.Model
 {
     public class User
     {

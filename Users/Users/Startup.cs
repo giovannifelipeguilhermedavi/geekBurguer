@@ -5,9 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Users.Extension;
-using Users.Interfaces;
-using Users.Repository;
+using Users.Contract.Extension;
+using Users.Contract.Repository;
+using Users.Interfaces.Contract;
 
 namespace Users
 {

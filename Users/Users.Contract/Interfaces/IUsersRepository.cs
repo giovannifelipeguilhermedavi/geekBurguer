@@ -1,7 +1,6 @@
-﻿using System.Threading.Tasks;
-using Users.Model;
+﻿using Users.Contract.Model;
 
-namespace Users.Interfaces
+namespace Users.Interfaces.Contract
 {
     public interface IUsersRepository
     {

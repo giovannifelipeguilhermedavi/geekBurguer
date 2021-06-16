@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Users.Model;
+using Users.Contract.Model;
 using Users.ModelView;
 
 namespace Users.AutoMapper

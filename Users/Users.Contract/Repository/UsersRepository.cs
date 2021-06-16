@@ -1,9 +1,8 @@
 ﻿using System.Linq;
-using System.Threading.Tasks;
-using Users.Interfaces;
-using Users.Model;
+using Users.Contract.Model;
+using Users.Interfaces.Contract;
 
-namespace Users.Repository
+namespace Users.Contract.Repository
 {
     public class UsersRepository : IUsersRepository
     {
@@ -17,7 +16,7 @@ namespace Users.Repository
         public bool ExisteUserId(int userId)
         {
             var user = usersDbContext.Users.Where(r => r.UserId.Equals(userId)).FirstOrDefault();
-            if (user.UserId == 0)
+            if (user == null)
             {
                 return false;
             }

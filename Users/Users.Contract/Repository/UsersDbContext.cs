@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Users.Model;
+using Users.Contract.Model;
 
-namespace Users.Repository
+namespace Users.Contract.Repository
 {
     public class UsersDbContext : DbContext
     {

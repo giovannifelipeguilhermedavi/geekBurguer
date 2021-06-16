@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Users.Model;
-using Users.Repository;
+﻿using System.Collections.Generic;
+using Users.Contract.Model;
+using Users.Contract.Repository;
 
-namespace Users.Extension
+namespace Users.Contract.Extension
 {
     public static class UsersContextExtensions
     {

@@ -1,11 +1,6 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Users.Interfaces;
+using Users.Interfaces.Contract;
 using Users.ModelView;
 
 namespace Users.Controllers
